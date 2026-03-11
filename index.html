@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio | Capturing Moments</title>
+    <meta name="description"
+        content="Professional photography portfolio showcasing wedding, portrait, and event photography services.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Flawless<span> Photography</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <!-- Using Unsplash for placeholder high quality background -->
+                <img src="https://images.unsplash.com/photo-1452561498801-931d87049dc7?q=80&w=2070&auto=format&fit=crop"
+                    alt="Hero Background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content container">
+                <h1 class="fade-up">Capture The Magic <br>Of The Moment</h1>
+                <p class="tagline fade-up delay-1">Welcome to Flawless Photography.<br>Capturing your most precious moments with passion and creativity.</p>
+                <a href="#portfolio" class="btn btn-primary fade-up delay-2">View Portfolio</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container about-container">
+                <div class="about-image reveal">
+                    <img src="images/me/profile.jpg"
+                        alt="Photographer Profile" loading="lazy">
+                </div>
+                <div class="about-text reveal">
+                    <span class="section-subtitle">About Me</span>
+                    <h2 class="section-title">Behind the Lens</h2>
+                    <p>With over 7 years of professional experience, I specialize in capturing the raw, authentic
+                        emotions of your most treasured moments. Whether it's the quiet anticipation before a wedding or
+                        the vibrant energy of a live event, my goal is to freeze time and turn fleeting seconds into
+                        lifelong memories.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">Events Covered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section class="portfolio section bg-alt" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Portfolio Showcase</h2>
+                </div>
+
+                <!-- Gallery Filters -->
+                <div class="gallery-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="nature">Nature</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <!-- Gallery Grid (Masonry expected here) -->
+                <div class="gallery-grid reveal" id="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item wedding" data-category="wedding">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/wedding/@flawless_photography___ .Dm for your bookings +91 90804 82374 . (1).jpg"
+                                alt="Wedding Couple" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Summer Wedding</h3>
+                                <span class="category-tag">Wedding</span>
+                                <button class="view-btn" aria-label="View Image"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item portrait" data-category="portrait">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/Profile/image copy 4.png"
+                                alt="Studio Portrait" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Studio Session</h3>
+                                <span class="category-tag">Portrait</span>
+                                <button class="view-btn" aria-label="View Image"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item nature" data-category="nature">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/event/dance/d2.jpg"
+                                alt="Mountain Landscape" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Alpine Mornings</h3>
+                                <span class="category-tag">Nature</span>
+                                <button class="view-btn" aria-label="View Image"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item events" data-category="events">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/event/singing/s1.heic"
+                                alt="Concert Crowd" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Music Festival</h3>
+                                <span class="category-tag">Events</span>
+                                <button class="view-btn" aria-label="View Image"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item wedding" data-category="wedding">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/wedding/Gokul & Girija 💕 Pre-wedding.jpg"
+                                alt="Wedding Rings" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>The Details</h3>
+                                <span class="category-tag">Wedding</span>
+                                <button class="view-btn" aria-label="View Image"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item portrait" data-category="portrait">
+                        <div class="gallery-img-wrapper">
+                            <img src="images/Profile/image copy.png"
+                                alt="Outdoor Portrait" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h3>Golden Hour</h3>
+                                <span class="category-tag">Portrait</span>
+                                <button class="view-btn" aria-label="View Image"><i
+                                        class="fa-solid fa-expand"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4 reveal">
+                    <a href="#" class="btn btn-outline">Load More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">What I Do</span>
+                    <h2 class="section-title">Photography Services</h2>
+                </div>
+
+                <div class="services-grid reveal">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-rings-wedding"></i>
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h3>Wedding Photography</h3>
+                        <p>Complete coverage of your special day, capturing every emotion, detail, and unforgettable
+                            moment from start to finish.</p>
+                        <span class="service-price">Starting at ₹37,000</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <h3>Birthday Photography</h3>
+                        <p>Professional birthday event photography including high-resolution photos, album design, and customized invitation cards to capture every joyful moment of the celebration.</p>
+                        <span class="service-price">Starting at ₹12,800</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                        <h3>Event Photography</h3>
+                        <p>Professional coverage for corporate events, parties, anniversaries, and family gatherings.</p>
+                        <span class="service-price">Starting at ₹12,800</span>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h3>Portrait Photography</h3>
+                        <p>High-quality individual, family, or professional headshots with expert lighting and
+                            composition.</p>
+                        <span class="service-price">Starting at ₹4,900</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Packages Section -->
+<section class="pricing section bg-alt" id="pricing">
+<div class="container">
+
+<div class="section-header text-center reveal">
+<span class="section-subtitle">Pricing</span>
+<h2 class="section-title">Photography Packages</h2>
+</div>
+
+<div class="pricing-wrapper reveal">
+<button class="scroll-btn left" onclick="scrollPricing(-1)" aria-label="Scroll left">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="pricing-scroll" id="pricingScroll">
+
+<!-- Profile Shoot -->
+<div class="pricing-card">
+<div class="pricing-header">
+<h3>Profile Shoot</h3>
+<div class="price">₹4900</div>
+</div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> 2 Hours Session</li>
+<li><i class="fa-solid fa-check"></i> Unlimited Photos</li>
+<li><i class="fa-solid fa-check"></i> 10 Edited Photos</li>
+<li><i class="fa-solid fa-check"></i> Semi Professional Camera</li>
+</ul>
+<a href="#contact" class="btn btn-outline btn-full">Book Now</a>
+</div>
+
+<!-- Birthday Package -->
+<div class="pricing-card">
+<div class="pricing-header">
+<h3>Birthday Package</h3>
+<div class="price">₹12800</div>
+</div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> Traditional Photography Coverage</li>
+<li><i class="fa-solid fa-check"></i> Full Event Coverage</li>
+<li><i class="fa-solid fa-check"></i> Unlimited High Resolution Photos</li>
+<li><i class="fa-solid fa-check"></i> Online Gallery Sharing</li>
+<li><i class="fa-solid fa-check"></i> Customized E-Invite Card</li>
+<li><i class="fa-solid fa-check"></i> 120 Edited Photos (22 Sheet Album)</li>
+<li><i class="fa-solid fa-check"></i> Photo Frame 12×18</li>
+<li><i class="fa-solid fa-check"></i> Customized Photo Calendar</li>
+<li><i class="fa-solid fa-check"></i> 32GB Pen Drive</li>
+</ul>
+<a href="#contact" class="btn btn-primary btn-full">Book Now</a>
+</div>
+
+<!-- Premium Birthday Package -->
+<div class="pricing-card">
+<div class="pricing-header">
+<h3>Premium Birthday</h3>
+<div class="price">₹24600</div>
+</div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> Professional Photography</li>
+<li><i class="fa-solid fa-check"></i> 4K Videography (60fps)</li>
+<li><i class="fa-solid fa-check"></i> Full Event Coverage</li>
+<li><i class="fa-solid fa-check"></i> Unlimited Photos</li>
+<li><i class="fa-solid fa-check"></i> Online Gallery</li>
+<li><i class="fa-solid fa-check"></i> Customized E-Invite</li>
+<li><i class="fa-solid fa-check"></i> 130 Edited Photos (25 Sheet Album)</li>
+<li><i class="fa-solid fa-check"></i> Album Video for Mobile</li>
+<li><i class="fa-solid fa-check"></i> Photo Frame 12×18</li>
+<li><i class="fa-solid fa-check"></i> Photo Calendar</li>
+<li><i class="fa-solid fa-check"></i> 32GB Pen Drive</li>
+</ul>
+<a href="#contact" class="btn btn-outline btn-full">Book Now</a>
+</div>
+
+<!-- Wedding Package -->
+<div class="pricing-card">
+<div class="pricing-header">
+<h3>Wedding Package</h3>
+<div class="price">₹37000</div>
+</div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> Traditional Photographer</li>
+<li><i class="fa-solid fa-check"></i> Traditional Videographer</li>
+<li><i class="fa-solid fa-check"></i> Premium Album (200 Images)</li>
+<li><i class="fa-solid fa-check"></i> Unlimited High Resolution Photos</li>
+<li><i class="fa-solid fa-check"></i> Edited Video + Raw Images</li>
+<li><i class="fa-solid fa-check"></i> Photo Frames (12×18)</li>
+<li><i class="fa-solid fa-check"></i> Photo Calendar</li>
+<li><i class="fa-solid fa-check"></i> Pendrive Box</li>
+<li><i class="fa-solid fa-check"></i> Online Invitation Card</li>
+</ul>
+<a href="#contact" class="btn btn-outline btn-full">Book Now</a>
+</div>
+
+<!-- Silver Wedding Package -->
+<div class="pricing-card">
+<div class="pricing-header">
+<h3>Silver Wedding</h3>
+<div class="price">₹51000</div>
+</div>
+<ul class="pricing-features">
+<li><i class="fa-solid fa-check"></i> Traditional Photography</li>
+<li><i class="fa-solid fa-check"></i> Traditional Videography</li>
+<li><i class="fa-solid fa-check"></i> Candid Photography</li>
+<li><i class="fa-solid fa-check"></i> 2 Edited Videos</li>
+<li><i class="fa-solid fa-check"></i> 35 Sheet Album (210 Images)</li>
+<li><i class="fa-solid fa-check"></i> Premium Wedding Album</li>
+<li><i class="fa-solid fa-check"></i> Premium Reception Album</li>
+<li><i class="fa-solid fa-check"></i> Unlimited High Resolution Images</li>
+<li><i class="fa-solid fa-check"></i> Wedding & Reception Frames</li>
+<li><i class="fa-solid fa-check"></i> Mixed Photo Calendar</li>
+<li><i class="fa-solid fa-check"></i> Online E-Invite Card</li>
+<li><i class="fa-solid fa-check"></i> 128GB Pendrive</li>
+</ul>
+<a href="#contact" class="btn btn-outline btn-full">Book Now</a>
+</div>
+
+</div>
+
+<button class="scroll-btn right" onclick="scrollPricing(1)" aria-label="Scroll right">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+
+</div>
+</div>
+</section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Client Stories</span>
+                    <h2 class="section-title">What They Say</h2>
+                </div>
+
+                <div class="testimonials-grid reveal">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Alex made our wedding day incredibly special. The photos are absolute
+                            perfection and perfectly captured the joy of our celebration. Highly recommended!"</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1770&auto=format&fit=crop"
+                                alt="Client" class="client-img">
+                            <div>
+                                <h4>Sarah & John</h4>
+                                <span>Wedding clients</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"I couldn't be happier with my portrait session. The lighting, the
+                            setting, and the relaxed atmosphere made for stunning headshots for my business."</p>
+                        <div class="client-info">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop"
+                                alt="Client" class="client-img">
+                            <div>
+                                <h4>Michael T.</h4>
+                                <span>Professional Portrait</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed Section -->
+        <section class="instagram section bg-alt" id="instagram">
+            <div class="container text-center reveal">
+                <span class="section-subtitle">Follow The Journey</span>
+                <h2 class="section-title"><a href="https://www.instagram.com/flawless_photography___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i> @flawless_photography___</a></h2>
+
+                <div class="insta-grid mt-4">
+                    <a href="https://www.instagram.com/flawless_photography___/p/DTDD_r5jzC6/" class="insta-item">
+                        <img src="images/Profile/profile1.jpg"
+                            alt="Instagram Post 1" loading="lazy">
+                        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/flawless_photography___/reel/DB9EFzLyQSk/" class="insta-item">
+                        <img src="images/brithday/image.png"
+                            alt="Instagram Post 2" loading="lazy">
+                        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/flawless_photography___/p/DVYo8ufEYZQ/" class="insta-item">
+                        <img src="images/wedding/@flawless_photography___ .Dm for your bookings +91 90804 82374 . (1).jpg"
+                            alt="Instagram Post 3" loading="lazy">
+                        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/p/DANC5AhS4-z/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="insta-item">
+                        <img src="images/wedding/BW 1.jpg"
+                            alt="Instagram Post 4" loading="lazy">
+                        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/flawless_photography___/p/DFeykebtMCb/" class="insta-item d-none-mobile">
+                        <img src="images/event/dance/dd1.jpg"
+                            alt="Instagram Post 5" loading="lazy">
+                        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/flawless_photography___/p/DSKrQ6RD7aw/" class="insta-item d-none-mobile">
+                        <img src="images/wedding/wed.jpg"
+                            alt="Instagram Post 6" loading="lazy">
+                        <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+                    </a>
+                </div>
+
+                <div class="mt-4">
+                    <a href="https://www.instagram.com/flawless_photography___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-outline"><i class="fa-brands fa-instagram mr-2"></i> Follow on
+                        Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact-container reveal">
+                    <div class="contact-content">
+                        <span class="section-subtitle">Get In Touch</span>
+                        <h2 class="section-title">Let's Work Together</h2>
+                        <p class="contact-desc">Ready to create some magic? Fill out the form or reach out directly via
+                            WhatsApp to discuss your next photoshoot.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="icon-box whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/919080482374">+91 90804 82374</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="icon-box instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Instagram</h4>
+                                    <a href="https://www.instagram.com/flawless_photography___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@flawless_photography___</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="icon-box email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <a href="mailto:flawlesp@gmail.com">flawlesp@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Interested Service</label>
+                                <select id="service">
+                                    <option value="wedding">Wedding</option>
+                                    <option value="pre-wedding">Pre-wedding</option>
+                                    <option value="event">Event</option>
+                                    <option value="portrait">Portrait</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" rows="4" placeholder="Tell me about your event..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map -->
+               <section class="studio-location">
+
+<h2>Our Studio Location</h2>
+
+<div class="map-container">
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.971706788716!2d80.09177277485327!3d12.909539987400164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f6c2d4b8ba5%3A0xca541b8a91d81d49!2sFlawless%20Photography!5e0!3m2!1sen!2sin!4v1773236216334!5m2!1sen!2sin"
+width="100%"
+height="400"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+
+</div>
+
+</section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">Flawless<span> Photography</span></a>
+                <p>Capturing life's most beautiful moments with passion and creativity.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/flawless_photography___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#pricing">Packages</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Wedding</a></li>
+                    <li><a href="#">Portraits</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Commercial</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Flawless Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Elements -->
+    <a href="https://api.whatsapp.com/send/?phone=919080482374&text&type=phone_number&app_absent=0&utm_source=ig" class="floating-btn whatsapp-btn" target="_blank"
+        aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <button class="floating-btn back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
